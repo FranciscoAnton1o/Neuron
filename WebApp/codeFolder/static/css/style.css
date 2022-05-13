@@ -1,0 +1,97 @@
+/*body,
+html {
+    background-image: url("/static/img/afterScan-Background1.png");
+    background-position: center;
+    background-size: cover;
+}*/
+
+.container-0{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgba(34,193,195,0.006039915966386533) 0%, rgba(32,54,77,1) 100%), url("/static/img/afterScan-Background1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.first-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+  	width: 700px;
+    border-radius: 20px;
+  	background-color: #c2e6f6;
+    text-align: center;
+}
+
+.first-box h1 {
+    font-family: "Alfa Slab One", cursive !important;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #545454;
+}
+
+.first-box h2 {
+    font-size: 15px;
+    margin-top: 30px;
+    font-family: "Secular One", sans-serif;
+}
+
+.container-1{
+    width: 100%;
+    height: 95vh;
+    color: #fff;
+    background-color: rgba(32,54,77,1);
+    text-align: center;
+    align-items: center;
+}
+
+.second-box{
+    position: absolute;
+    margin: 6% 0% 0% 0%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 480px;
+    width: 640px;
+}
+
+.videoCam{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80vh;
+    border-radius: 10px
+}
+
+.scan-videoCam {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 70%;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.scan-videoCam:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.scan-videoCam:focus {
+    outline: none;
+}

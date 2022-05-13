@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-PT">
+
+<head>
+   <meta charset="utf-8">
+   <!--Title-->
+   <title>Neuron</title>
+
+   <meta name="app-name" content="design_viewer" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--Import css file-->
+   <link rel="stylesheet" href="../static/css/style.css" />
+   <!--Import font family-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+   <!--Import font family 2-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+   <!--Bootstrap-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <div class="container-0">
+      <div class="first-box">
+         <h1>Welcome to Neuron!!</h1>
+         <h2>How you feel today?<br>
+            Let's find out!</h2>
+      </div>
+   </div>
+   <div class="container-1">
+      <div class="second-box">
+         <!--is getting the cam from 'camera.py using flask' -->
+         <center><img class="videoCam" src="{{ url_for('video_feed') }}"></center> 
+         <button class="scan-videoCam">Analyze</button>
+      </div>
+   </div>
+
+   <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous"></script>
+   <script src="../static/js/app.js"></script>
+</body>
+</html>

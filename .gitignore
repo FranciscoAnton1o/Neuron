@@ -1,0 +1,25 @@
+
+# visual studio code
+.vscode/
+
+# python
+venv/
+virtualenv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+docs/build_*
+.idea/
+.env
+.pickle
+
+# misc
+.DS_Store
+output/*
+
+#Project
+Deep_Learning_Module/PetImages
+Deep_Learning_Module/*.pickle
